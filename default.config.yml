@@ -46,6 +46,7 @@ homebrew_installed_packages:
   - binutils
   - jq
   - bash
+  - wget
 
 homebrew_taps:
   - homebrew/core
