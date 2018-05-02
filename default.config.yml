@@ -37,6 +37,7 @@ homebrew_cask_apps:
   - vagrant
   - visual-studio-code # vscode
   - bearychat
+  - zeplin
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
@@ -74,9 +75,10 @@ homebrew_installed_packages:
   - mas
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
-mas_email: ""
-mas_password: ""
+mas_installed_apps:
+  - { id: 702682966, name: "搜狗输入助手" }
+  - { id: 836500024, name: "微信" }
+  - { id: 1189898970, name: "企业微信" }
 
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are
