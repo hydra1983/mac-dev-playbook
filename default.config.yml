@@ -2,9 +2,9 @@
 downloads: ~/.ansible-downloads/
 
 configure_dotfiles: yes
-configure_sudoers: yes
-configure_terminal: yes
-configure_osx: yes
+configure_sudoers: no
+configure_terminal: no
+configure_osx: no
 
 dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
@@ -47,6 +47,7 @@ homebrew_installed_packages:
   - jq
   - bash
   - wget
+  - yarn
 
 homebrew_taps:
   - homebrew/core
