@@ -2,9 +2,6 @@
 downloads: ~/.ansible-downloads/
 
 configure_dotfiles: yes
-configure_sudoers: no
-configure_terminal: no
-configure_osx: no
 
 dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
@@ -15,6 +12,31 @@ dotfiles_files:
   # - .inputrc
   - .osx
   # - .vimrc
+
+homebrew_taps:
+  - homebrew/core
+  - caskroom/cask
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - iterm2
+  - chromedriver
+  - docker
+  # - dropbox
+  - firefox
+  - google-chrome
+  # - handbrake
+  - licecap
+  - limechat
+  - macvim
+  - sequel-pro
+  - skitch
+  - slack
+  # - sublime-text
+  - transmit
+  - vagrant
+  - visual-studio-code # vscode
+  - bearychat
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
@@ -48,38 +70,12 @@ homebrew_installed_packages:
   - bash
   - wget
   - yarn
-
-homebrew_taps:
-  - homebrew/core
-  - caskroom/cask
-
-homebrew_cask_appdir: /Applications
-homebrew_cask_apps:
-  - iterm2
-  - chromedriver
-  - docker
-  # - dropbox
-  - firefox
-  - google-chrome
-  # - handbrake
-  - licecap
-  - limechat
-  - macvim
-  - sequel-pro
-  - skitch
-  - slack
-  # - sublime-text
-  - transmit
-  - vagrant
-  - visual-studio-code # vscode
-  - bearychat
+  - rbenv
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
 mas_email: ""
 mas_password: ""
-
-osx_script: "~/.osx --no-restart"
 
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are
